@@ -1,0 +1,15 @@
+# sddm install from a container is bugged.
+# https://github.com/ublue-os/main/issues/224
+# This workaround creates the user before sddm runs.
+
+[Unit]
+Description=Work around broken sddm install
+Before=sddm.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/ublue-sddm-workaround.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

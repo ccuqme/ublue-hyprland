@@ -1,0 +1,17 @@
+#!/bin/bash
+
+CURRENT_UID="$(id -u)"
+
+if [ "$CURRENT_UID" -ne 0 ]; then
+  echo "Please run as root!"
+  exit 1
+fi
+
+sudo systemd-sysusers
+
+# Add your user to the adbusers group
+sudo gpasswd -a $(whoami) adbusers
+    
+# Restart UDEV
+sudo udevadm control --reload-rules
+sudo systemctl restart systemd-udevd.service
