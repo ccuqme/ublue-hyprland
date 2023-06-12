@@ -7,4 +7,3 @@ getent group sddm >/dev/null || groupadd -r sddm
 getent passwd sddm >/dev/null || useradd -g sddm -M -d /var/lib/sddm -s /sbin/nologin -r sddm
 
 systemctl set-default graphical.target
-systemctl isolate graphical.target
