@@ -2,7 +2,6 @@
     "all": {
         "include": {
             "all": [
-                "pulseaudio",
                 "python3-pip",
                 "nm-connection-editor",
                 "NetworkManager-adsl",
@@ -63,8 +62,6 @@
         },
         "exclude": {
             "all": [
-                "pipewire-pulseaudio",
-                "pipewire-alsa",
                 "firefox",
                 "firefox-langpacks"
             ]
