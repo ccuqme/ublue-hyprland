@@ -12,12 +12,11 @@ This image includes:
   * GDB
   * Btop
   * Cliphist
-  * Qalculate
   * Fastfetch
   * Lite-xl
   * Android utilities (android-file-transfer, android-tools, and android udev rules)
   * Custom yafti configuration and first-time setup
-  * Custom theming
+  * Custom theming and Hyprland configuration
 
 ## Rebase
 
