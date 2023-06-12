@@ -4,7 +4,7 @@
 
 [Unit]
 Description=Work around broken sddm install
-Before=sddm.service systemd-user-sessions.service getty@tty1.service plymouth-quit.service systemd-logind.service
+Before=sddm.service
 
 [Service]
 Type=oneshot
