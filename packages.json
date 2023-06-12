@@ -63,6 +63,8 @@
         },
         "exclude": {
             "all": [
+                "pipewire-pulseaudio",
+                "pipewire-alsa",
                 "firefox",
                 "firefox-langpacks"
             ]
