@@ -27,7 +27,8 @@ RUN /tmp/build.sh && \
     systemctl enable power-profiles-daemon && \
     systemctl enable rpm-ostreed-automatic.timer && \
     systemctl enable sddm && \
-    systemctl enable ublue-sddm-workaround
+    systemctl enable ublue-sddm-workaround && \
+    systemctl set-default graphical.target
 RUN /tmp/post-install.sh
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit
