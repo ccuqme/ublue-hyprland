@@ -16,7 +16,8 @@ This image includes:
   * Fastfetch
   * Lite-xl
   * Android utilities (android-file-transfer, android-tools, and android udev rules)
-  * Custom yafti configuration and first-time setup.
+  * Custom yafti configuration and first-time setup
+  * Custom theming
 
 ## Rebase
 
@@ -26,16 +27,10 @@ AMD/Intel:
 ```bash
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/ccuqme/hyprland-main:latest
 ```
-Nvidia (driver not functional. Haven't even started looking into this):
+Nvidia (Driver not functional. Have not looked into this yet):
 ```bash
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/ccuqme/hyprland-nvidia:latest
 ```
-
-### There's a tiny bug in the current image:
-
-If `sddm` does not launch after rebasing and rebooting, just reboot once again. I seem to be setting the graphical.target too late, and haven't figured out how to do it earlier yet. 
-
-If you're rebasing from Silverblue (and most likely any other image with a DE) you should be fine after the first reboot after rebasing.
 
 ---
 
