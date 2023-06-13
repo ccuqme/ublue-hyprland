@@ -1,6 +1,8 @@
 # ublue-hyprland
 ## Experimental Alpha Release: Download and Use at Your Own Risk!
-ublue-hyprland is a customized uBlue image using Hyprland. Please note that this image is not officially supported by uBlue or Fedora, and is designed for personal use only.
+ublue-hyprland is a customized uBlue image using Hyprland. Not officially affiliated with uBlue or Fedora and is mostly designed for personal use.
+
+![ublue-hyprland](https://github.com/ccuqme/ublue-hyprland/assets/63260355/fd78f4bf-a921-4d36-8391-84b8e5b9b9cc)
 
 ## Features
 
