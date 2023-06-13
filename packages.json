@@ -57,7 +57,8 @@
                 "android-file-transfer",
                 "android-tools",
                 "gdb",
-                "sddm"
+                "sddm",
+                "light"
             ]
         },
         "exclude": {
