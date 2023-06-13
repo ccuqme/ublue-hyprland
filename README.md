@@ -48,7 +48,7 @@ rpm-ostree rebase ostree-unverified-registry:ghcr.io/ccuqme/hyprland-nvidia:late
 ## Updates
 Updates to user configurations will not be automatically applied. 
 
-To receive the latest updates, you can either execute `just user-configs` or remove `~/.hyprland-configured` prior to rebooting. Please note that this may overwrite some elements of your existing user configuration (located at `usr/share/homedir`).
+To receive the latest updates, you can either execute `just user-configs` or remove `~/.hyprland-configured` prior to rebooting. Please note that this will overwrite some elements of your existing user configuration.
 
 The most recent user configuration can always be found in `/usr/share/homedir`.
 
