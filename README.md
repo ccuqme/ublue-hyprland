@@ -19,7 +19,8 @@ The image comes with the following features:
   * wdisplays
   * Android utilities (android-file-transfer, android-tools, and android udev rules)
   * Custom yafti configuration and initial setup
-  * Custom themes and Hyprland configurations
+  * Catppuccin Mocha theming
+  * Custom Hyprland configuration
 
 ## Installation
 
