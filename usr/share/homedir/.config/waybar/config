@@ -11,11 +11,11 @@
         // "custom/launcher",
         "wlr/workspaces",
         "custom/media",
-        "hyprland/window",
+        "hyprland/window"
     ],
  
     "modules-center": [
-        "clock",
+        "clock"
     ],
 
     "modules-right": [
@@ -59,7 +59,7 @@
 
     "custom/PBPbattery": {
         "exec": "~/.config/waybar/scripts/PBPbattery.sh",
-        "format": "{}",
+        "format": "{}"
     },
 
     "clock": {
@@ -74,9 +74,9 @@
         "format": " {usage}% ({load})", // Icon: microchip
         "states": {
             "warning": 70,
-            "critical": 90,
+            "critical": 90
         },
-        "on-click": "kitty -e 'btop'",
+        "on-click": "kitty -e 'btop'"
     },
 
     "custom/keyboard-layout": {
@@ -87,7 +87,7 @@
         // Signal sent by Sway key binding (~/.config/sway/key-bindings)
         "signal": 1, // SIGHUP
         "tooltip": false,
-        "on-click": "~/.config/waybar/scripts/keyhint.sh",
+        "on-click": "~/.config/waybar/scripts/keyhint.sh"
     },
 
     "memory": {
@@ -106,13 +106,13 @@
         "format-ethernet": " ", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
-        "on-click": "kitty -e 'nmtui'",
+        "on-click": "kitty -e 'nmtui'"
     },
     "network#vpn": {
         "interface": "tun0",
         "format": " ",
         "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
     },
 
     "hyprland/mode": {
@@ -132,7 +132,7 @@
         "on-click": "activate",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
-        "format": "  {icon}  ",
+        "format": "  {icon}  "
     },
 
     "pulseaudio": {
@@ -153,7 +153,7 @@
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "on-click-right": "pavucontrol",
         "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +2%",
-        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -2%"
     },
 
     "pulseaudio#microphone": {
@@ -172,12 +172,12 @@
     "custom/weather": {
         "exec": "~/.config/waybar/scripts/weather.sh tampa", 
         "return-type": "json",
-        "interval": 600,
+        "interval": 600
     },
 
     "tray": {
         "icon-size": 18,
-        "spacing":10,
+        "spacing":10
      },
 
     "backlight#icon": {
@@ -214,13 +214,13 @@
     "custom/launcher": {
         "format":" ",
         "on-click": "exec wofi -c ~/.config/wofi/config -I",
-        "tooltip": false,
+        "tooltip": false
     },
 
     "custom/power": {
         "format":"⏻",
         "on-click": "exec ~/.config/waybar/scripts/power-menu.sh",
-        "tooltip": false,
+        "tooltip": false
     },
 
     "custom/media": {
