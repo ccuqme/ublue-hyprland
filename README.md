@@ -23,8 +23,6 @@ The image comes with the following features:
 
 ## Installation
 
-**Rebase**
-
 **Important**: We strongly recommend backing up your `.config` directory and `.profile` file before proceeding with the following steps. Please be aware that this operation comes with certain risks, and should be performed at your discretion.
 
 If you prefer not to use the preconfigured settings, execute the following command before initiating the rebase process:
@@ -32,6 +30,8 @@ If you prefer not to use the preconfigured settings, execute the following comma
 ```bash
 touch ~/.hyprland-configured
 ```
+
+**Rebase**
 
 For AMD/Intel systems:
 
