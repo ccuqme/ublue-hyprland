@@ -79,7 +79,8 @@ window#waybar {
 #custom-power,
 #workspaces,
 #custom-media,
-#custom-PBPbattery {
+#custom-PBPbattery,
+#custom-notification {
     padding:0.25rem 0.75rem;
     margin: 1px 6px;
     background-color: rgba(0,0,0,0.8);
