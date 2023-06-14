@@ -40,7 +40,7 @@ For AMD/Intel systems:
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/ccuqme/hyprland-main:latest
 ```
 
-For Nvidia systems (note that the driver is currently not operational, investigation is pending):
+For Nvidia systems:
 
 ```bash
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/ccuqme/hyprland-nvidia:latest
