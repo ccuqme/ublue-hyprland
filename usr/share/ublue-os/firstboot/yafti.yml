@@ -88,7 +88,6 @@ screens:
             - Gradience (GTK4 theming): com.github.GradienceTeam.Gradience/x86_64/stable
             - adw-gtk3-dark (GTK3 theme): org.gtk.Gtk3theme.adw-gtk3-dark
             - ffmpeg: org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
-            - kwalletmanager5 (Wallet): org.kde.kwalletmanager5
         Optional Apps:
           description: Optional Applications I use for creative work and recreation
           default: false
@@ -113,7 +112,7 @@ screens:
             - Cryptomator (Data encryption): org.cryptomator.Cryptomator
             - Deluge (Torrent client): org.deluge_torrent.deluge
             - ThinLinc (Remote desktop): se.cendio.tlclient
-            - Bitwarden (Password manager): com.bitwarden.desktop)
+            - Bitwarden (Password manager): com.bitwarden.desktop
             - PeaZip: io.github.peazip.PeaZip
             - PeaZip addon: io.github.peazip.PeaZip.Addon.i386
         Web Browsers:
