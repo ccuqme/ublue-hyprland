@@ -20,6 +20,7 @@ COPY --from=ghcr.io/ublue-os/akmods:${FEDORA_MAJOR_VERSION} /rpms /tmp/akmods-rp
 
 RUN if [ "${IMAGE_NAME}" = "hyprland-nvidia" ]; then \
         sed -i 's/"hyprland"/"hyprland-nvidia"/' /tmp/packages.json; \
+        echo -e "blacklist nouveau\noptions nouveau modeset=0" > /etc/modprobe.d/nouveau-blacklist.conf; \
     fi
 RUN wget https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-"${FEDORA_MAJOR_VERSION}"/solopasha-hyprland-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/copr-solopasha-hyprland-fedora-"${FEDORA_MAJOR_VERSION}".repo
 RUN wget https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-"${FEDORA_MAJOR_VERSION}"/swaynotificationcenter-fedora-"${FEDORA_MAJOR_VERSION}".repo -O /etc/yum.repos.d/copr-swaynotificationcenter-fedora-"${FEDORA_MAJOR_VERSION}".repo
