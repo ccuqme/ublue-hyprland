@@ -1,6 +1,6 @@
 # ublue-hyprland
 ## Experimental Alpha Release: Download and Use at Your Own Risk!
-ublue-hyprland is a customized uBlue image using Hyprland. Not officially affiliated with uBlue or Fedora and is mostly designed for personal use.
+ublue-hyprland is a customized uBlue image using Hyprland. Not officially affiliated with uBlue or Fedora, and is mostly designed for personal use.
 
 ![ublue-hyprland](https://github.com/ccuqme/ublue-hyprland/assets/63260355/fd78f4bf-a921-4d36-8391-84b8e5b9b9cc)
 
@@ -24,7 +24,7 @@ The image comes with the following features:
 
 ## Installation
 
-**Important**: We strongly recommend backing up your `.config` directory and `.profile` file before proceeding with the following steps. Please be aware that this operation comes with certain risks, and should be performed at your discretion.
+**Important**: I strongly recommend backing up your `.config` directory and `.profile` file before proceeding with the following steps. Please be aware that this operation comes with certain risks, and should be performed at your discretion.
 
 If you prefer not to use the preconfigured settings, execute the following command before initiating the rebase process:
 
@@ -123,6 +123,11 @@ If you decide to rebase to this image, and keep the preconfigured settings, belo
 - <kbd>Super</kbd>+<kbd>Z</kbd>: Toggle special workspace
 - <kbd>Super</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd>: Move to special workspace
 
+## Suggestions / Contributions
+Although ublue-hyprland is primarily a personal project, I welcome anyone who wants to use it, learn from it, or contribute to it. As a relative newcomer to both window managers and OCI images, I'm still exploring their potential. If you have ideas for improvements, features, or any kind of feedback, I'd love to hear them.
+
+Whether you've discovered a bug, have a feature request, or want to contribute in another way, don't hesitate to open an issue or submit a pull request.
+
 ---
 
-For more information on the features offered by uBlue, please refer to the [uBlue Starting Point](https://github.com/ublue-os/startingpoint) and [main uBlue image](https://github.com/ublue-os/main) documentation.
+For more information about uBlue, please refer to the [uBlue website](https://ublue.it/).
