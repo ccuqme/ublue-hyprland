@@ -11,7 +11,7 @@ EXCLUDED_PACKAGES=($(jq -r "[(.all.exclude | (.all, select(.\"$IMAGE_NAME\" != n
                              (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".exclude | (.all, select(.\"$IMAGE_NAME\" != null).\"$IMAGE_NAME\")[])] \
                              | sort | unique[]" /tmp/packages.json))
 
-rpm-ostree override replace --experimental --freeze --from repo='copr:copr.fedorainfracloud.org:solopasha:hyprland' xorg-x11-server-Xwayland
+rpm-ostree override replace --experimental --from repo='copr:copr.fedorainfracloud.org:solopasha:hyprland' xorg-x11-server-Xwayland
 
 if [[ "${#EXCLUDED_PACKAGES[@]}" -gt 0 ]]; then
     EXCLUDED_PACKAGES=($(rpm -qa --queryformat='%{NAME} ' ${EXCLUDED_PACKAGES[@]}))
